@@ -99,6 +99,7 @@ export class Popup extends UIElement implements IPopup {
 			elm = this.j.c.fromHTML(content);
 		} else {
 			elm = content as HTMLElement;
+      elm.tabIndex = 1;
 		}
 
 		box.appendChild(elm);
